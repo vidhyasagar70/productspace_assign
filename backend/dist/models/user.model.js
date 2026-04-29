@@ -28,7 +28,10 @@ const initUserModel = (sequelize) => {
         },
         passwordHash: {
             type: sequelize_1.DataTypes.STRING,
-            allowNull: false,
+            // Temporarily allow null so the deployed DB can be altered even if
+            // existing rows have no passwordHash value. Backfill will populate
+            // these entries with a hashed random password.
+            allowNull: true,
         },
         createdAt: sequelize_1.DataTypes.DATE,
         updatedAt: sequelize_1.DataTypes.DATE,
