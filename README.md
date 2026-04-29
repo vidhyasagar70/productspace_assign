@@ -9,6 +9,11 @@ The repository is split into two apps:
 - `backend` - Express API, Sequelize ORM, PostgreSQL, JWT auth, password hashing
 - `frontend` - Vite + React UI with protected routes and API integration
 
+## Live URLs
+
+- Frontend: [https://productspace-assign.vercel.app/auth](https://productspace-assign.vercel.app/auth)
+- Backend API: [https://productspace-assign.onrender.com/api](https://productspace-assign.onrender.com/api)
+
 ## Features
 
 - User signup and login
