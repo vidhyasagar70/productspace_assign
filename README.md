@@ -14,6 +14,13 @@ The repository is split into two apps:
 - Frontend: [https://productspace-assign.vercel.app/auth](https://productspace-assign.vercel.app/auth)
 - Backend API: [https://productspace-assign.onrender.com/api](https://productspace-assign.onrender.com/api)
 
+### Demo Credentials
+
+Use these credentials to test the application in production:
+
+**Email:** `vidhyasa369@gmail.com`  
+**Password:** `12345678`
+
 ## Features
 
 - User signup and login
@@ -169,6 +176,32 @@ Backend startup currently authenticates the database and calls `sequelize.sync()
 - Backend built with `npm run build`
 - Frontend built with `npm run build`
 - Process manager or platform service configured to run the backend `npm start`
+
+## Production Submission
+
+This application is production-ready and deployed on:
+
+- **Frontend:** Vercel  
+- **Backend:** Render  
+- **Database:** PostgreSQL (Render)
+
+### How to Test
+
+1. Open the frontend at [https://productspace-assign.vercel.app/auth](https://productspace-assign.vercel.app/auth)
+2. Sign in with the demo credentials:
+   - Email: `vidhyasa369@gmail.com`
+   - Password: `12345678`
+3. Create, view, update, and delete tasks
+4. Sign out and sign back in to verify session persistence
+
+### Key Features Demonstrated
+
+- User authentication with JWT tokens
+- Protected routes and API endpoints
+- Full CRUD operations for task management
+- Secure password hashing with bcryptjs
+- Persistent session storage in browser local storage
+- Environment-based configuration (development/production)
 
 ## Troubleshooting
 
