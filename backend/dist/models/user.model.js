@@ -14,7 +14,9 @@ const initUserModel = (sequelize) => {
         },
         name: {
             type: sequelize_1.DataTypes.STRING(80),
-            allowNull: false,
+            // Temporarily allow null to let sequelize alter the table on deploy
+            // without failing when existing rows have no name value.
+            allowNull: true,
         },
         email: {
             type: sequelize_1.DataTypes.STRING(120),

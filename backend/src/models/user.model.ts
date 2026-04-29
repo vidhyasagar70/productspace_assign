@@ -33,7 +33,9 @@ export const initUserModel = (sequelize: Sequelize): void => {
       },
       name: {
         type: DataTypes.STRING(80),
-        allowNull: false,
+        // Temporarily allow null to let sequelize alter the table on deploy
+        // without failing when existing rows have no name value.
+        allowNull: true,
       },
       email: {
         type: DataTypes.STRING(120),
