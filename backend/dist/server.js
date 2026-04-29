@@ -8,7 +8,7 @@ const startServer = async () => {
     try {
         (0, models_1.initModels)();
         await database_1.sequelize.authenticate();
-        await database_1.sequelize.sync();
+        await database_1.sequelize.sync({ alter: true });
         app_1.app.listen(env_1.env.port, () => {
             console.log(`Server running on port ${env_1.env.port}`);
         });
